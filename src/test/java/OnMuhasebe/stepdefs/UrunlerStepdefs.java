@@ -2,6 +2,7 @@ package OnMuhasebe.stepdefs;
 
 import OnMuhasebe.pages.UrunlerSayfasi;
 import OnMuhasebe.utilities.Driver;
+import com.github.javafaker.Faker;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -12,8 +13,9 @@ import java.time.Duration;
 
 public class UrunlerStepdefs {
     WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
-
     UrunlerSayfasi urunler = new UrunlerSayfasi();
+    Faker faker = new Faker();
+
     @Given("Kullanici uygulamayı acar")
     public void kullaniciUygulamayıAcar() {
     }
@@ -41,8 +43,16 @@ public class UrunlerStepdefs {
     @Then("Urun bilgileri girilir")
     public void urunBilgileriGirilir() {
 
-        wait.until(ExpectedConditions.elementToBeClickable(urunler.urunAdi)).click();
-        urunler.urunAdi.sendKeys("Urun"+System.currentTimeMillis());
+        urunler.urunAdi.click();
+        urunler.urunAdi.sendKeys("Test Urun"+faker.number().numberBetween(1,100));
 
+        urunler.stokKodu.click();
+        urunler.stokKodu.sendKeys("44");
     }
 }
+
+
+
+
+
+

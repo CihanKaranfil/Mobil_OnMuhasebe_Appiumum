@@ -29,6 +29,8 @@ public class UrunlerSayfasi {
 
     @AndroidFindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View/android.widget.EditText[1]")
     public WebElement urunAdi;
+    @AndroidFindBy(xpath = "//android.widget.ScrollView/android.widget.EditText[2]")
+    public WebElement stokKodu;
 
 
 }
