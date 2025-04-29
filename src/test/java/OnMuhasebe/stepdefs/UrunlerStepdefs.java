@@ -6,6 +6,7 @@ import com.github.javafaker.Faker;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.apache.poi.ss.formula.functions.T;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -41,15 +42,41 @@ public class UrunlerStepdefs {
     }
 
     @Then("Urun bilgileri girilir")
-    public void urunBilgileriGirilir() {
+    public void urunBilgileriGirilir() throws InterruptedException {
 
         urunler.urunAdi.click();
-        urunler.urunAdi.sendKeys("Test Urun"+faker.number().numberBetween(1,100));
+        urunler.urunAdi2.sendKeys("Test Urun"+faker.number().numberBetween(1,100));
 
         urunler.stokKodu.click();
         urunler.stokKodu.sendKeys("44");
+
+        urunler.fiyatStok.click();
+
+        wait.until(ExpectedConditions.elementToBeClickable(urunler.baslangicStokMiktar)).click();
+        urunler.baslangicStokMiktar.sendKeys("150");
+
+        wait.until(ExpectedConditions.elementToBeClickable(urunler.kiritikStokUyarisi)).click();
+        urunler.kiritikStokUyarisi.sendKeys("30");
+
+        Driver.driver.hideKeyboard();
+
+        wait.until(ExpectedConditions.elementToBeClickable(urunler.alisFiyati)).click();
+        urunler.alisFiyati2.sendKeys("300");
+
+        urunler.satisFiyati.click(); urunler.satisFiyati.sendKeys("550");
+        Driver.driver.hideKeyboard();
+
+        wait.until(ExpectedConditions.elementToBeClickable(urunler.kaydetButton)).click();
+        Thread.sleep(2000);
     }
 }
+
+
+
+
+
+
+
 
 
 

@@ -32,5 +32,36 @@ public class UrunlerSayfasi {
     @AndroidFindBy(xpath = "//android.widget.ScrollView/android.widget.EditText[2]")
     public WebElement stokKodu;
 
+    @AndroidFindBy(xpath = "//android.widget.ScrollView/android.widget.EditText[1]")
+    public WebElement urunAdi2;
+
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc=\"Fiyat & Stok\n" +
+            "Sekme 2 / 2\"]")
+    public WebElement fiyatStok;
+
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc=\"Depo 1\n" +
+            "Stok Deposu\n" +
+            "Başlangıç Stok Miktarı\n" +
+            "Kritik Stok Uyarısı\"]/android.widget.EditText[1]")
+    public WebElement baslangicStokMiktar;
+
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc=\"Depo 1\n" +
+            "Stok Deposu\n" +
+            "Başlangıç Stok Miktarı\n" +
+            "Kritik Stok Uyarısı\"]/android.widget.EditText[2]")
+    public WebElement kiritikStokUyarisi;
+
+    @AndroidFindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View/android.widget.EditText[1]")
+    public WebElement alisFiyati;
+
+    @AndroidFindBy(xpath = "//android.widget.ScrollView/android.widget.EditText[1]")
+    public WebElement alisFiyati2;
+
+    @AndroidFindBy(xpath = "//android.widget.ScrollView/android.widget.EditText[2]")
+    public WebElement satisFiyati;
+
+    @AndroidFindBy(xpath = "//android.widget.Button[@content-desc=\"Kaydet\"]")
+    public WebElement kaydetButton;
+
 
 }
