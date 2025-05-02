@@ -6,10 +6,13 @@ import OnMuhasebe.utilities.ReusableMethods;
 import com.github.javafaker.Faker;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import org.openqa.selenium.interactions.PointerInput;
+import org.openqa.selenium.interactions.Sequence;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.Arrays;
 
 public class MusteriStepDef  extends ReusableMethods {
     MusterilerSayfasi musteriler = new MusterilerSayfasi();
@@ -60,16 +63,21 @@ public class MusteriStepDef  extends ReusableMethods {
         wait.until(ExpectedConditions.elementToBeClickable(musteriler.ilceDdm)).click();
         wait.until(ExpectedConditions.elementToBeClickable(musteriler.ilceSecim)).click();
 
+       scrollendpage();
 
-      // scrollGesture(Driver.getDriver(), musteriler.vknTckn, "down", 3, 500);
+
+        try {
+            wait.until(ExpectedConditions.elementToBeClickable(musteriler.vknTckn)).click();
+        } catch (Exception e) {
 
 
-      // wait.until(ExpectedConditions.elementToBeClickable(musteriler.vknTckn)).click();
-      // musteriler.vknTckn.sendKeys(faker.number().digits(11));
-      // Driver.getDriver().hideKeyboard();
-      // wait.until(ExpectedConditions.elementToBeClickable(musteriler.vergiDairesi)).click();
+            wait.until(ExpectedConditions.elementToBeClickable(musteriler.vknTckn2)).click();
+        }
+        musteriler.vknTckn.sendKeys(faker.number().digits(11));
+       Driver.getDriver().hideKeyboard();
+       wait.until(ExpectedConditions.elementToBeClickable(musteriler.vergiDairesi)).click();
 
-      // musteriler.vergiDairesi.sendKeys("MALATYA");
+       musteriler.vergiDairesi.sendKeys("MALATYA");
 
 
 

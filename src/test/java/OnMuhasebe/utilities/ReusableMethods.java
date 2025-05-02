@@ -4,12 +4,15 @@ import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.PointerInput;
+import org.openqa.selenium.interactions.Sequence;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Arrays;
 
 public class ReusableMethods {
 
@@ -150,5 +153,23 @@ public class ReusableMethods {
                 "endY", endY,
                 "speed", speed
         ));
+    }
+
+    public  void scrollendpage(){
+        PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH, "finger1");
+        Sequence swipe = new Sequence(finger, 0);
+
+        // Başlangıç noktasına bas
+        swipe.addAction(finger.createPointerMove(Duration.ofMillis(0), PointerInput.Origin.viewport(), 500, 1300));
+        swipe.addAction(finger.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
+
+        // Parmağı (500, 600) → (500, 1300) arasında kaydır
+        swipe.addAction(finger.createPointerMove(Duration.ofMillis(600), PointerInput.Origin.viewport(), 500, 600));
+
+        // Parmağı kaldır
+        swipe.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
+
+        Driver.getDriver().perform(Arrays.asList(swipe));
+
     }
 }
