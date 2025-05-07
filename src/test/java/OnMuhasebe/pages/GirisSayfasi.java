@@ -12,15 +12,8 @@ public class GirisSayfasi {
         PageFactory.initElements(new AppiumFieldDecorator(Driver.getDriver()), this);
     }
 
-    @AndroidFindBy(id = "com.androidsample.generalstore:id/spinnerCountry")
-    public WebElement ulkeMenusu;
-
-
-
     @AndroidFindBy(xpath = "//android.widget.Button[@content-desc=\"Giriş Yap\"]")
     public WebElement girisYapButonu;
-
-
 
 
 }

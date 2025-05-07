@@ -70,7 +70,6 @@ public class MusteriStepDef  extends ReusableMethods {
             wait.until(ExpectedConditions.elementToBeClickable(musteriler.vknTckn)).click();
         } catch (Exception e) {
 
-
             wait.until(ExpectedConditions.elementToBeClickable(musteriler.vknTckn2)).click();
         }
         musteriler.vknTckn.sendKeys(faker.number().digits(11));
@@ -79,14 +78,10 @@ public class MusteriStepDef  extends ReusableMethods {
 
        musteriler.vergiDairesi.sendKeys("MALATYA");
 
-
-
     }
-
 
     @Then("Musteri kaydet butonuna tıklar")
     public void musteriKaydetButonunaTıklar() {
-
     }
 
 
