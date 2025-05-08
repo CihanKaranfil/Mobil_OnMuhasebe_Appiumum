@@ -10,3 +10,4 @@ Feature: Kasa Olusturma ve silme
     And Kasa olustur butonuna tiklar
     Then Kasa bilgileri girer
     And Kasa kaydedilir
+    Then Olusan kasa silinir

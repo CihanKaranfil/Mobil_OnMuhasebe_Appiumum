@@ -155,7 +155,7 @@ public class ReusableMethods {
         ));
     }
 
-    public  void scrollendpage(){
+    public static void scrollendpage(){
         PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH, "finger1");
         Sequence swipe = new Sequence(finger, 0);
 
