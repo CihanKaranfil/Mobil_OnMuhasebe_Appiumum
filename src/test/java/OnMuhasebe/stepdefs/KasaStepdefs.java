@@ -46,7 +46,6 @@ public class KasaStepdefs extends ReusableMethods {
     public void kasaBilgileriGirer() {
         wait.until(ExpectedConditions.elementToBeClickable(kasa.kasaIsmi)).click();
         kasa.kasaIsmi.sendKeys("YENİ TEST KASASI MOBİL");
-
         wait.until(ExpectedConditions.elementToBeClickable(kasa.acilisBakiyesi)).click();
         kasa.acilisBakiyesi.sendKeys("1000");
 

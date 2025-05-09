@@ -56,7 +56,6 @@ public class MusteriStepDef  extends ReusableMethods {
         musteriler.adres.sendKeys(faker.address().fullAddress());
         wait.until(ExpectedConditions.elementToBeClickable(musteriler.postaKodu)).click();
         musteriler.postaKodu.sendKeys(faker.address().zipCode());
-
         wait.until(ExpectedConditions.elementToBeClickable(musteriler.ilDdm)).click();
         wait.until(ExpectedConditions.elementToBeClickable(musteriler.ilSecim)).click();
         Thread.sleep(500);
@@ -64,7 +63,6 @@ public class MusteriStepDef  extends ReusableMethods {
         wait.until(ExpectedConditions.elementToBeClickable(musteriler.ilceSecim)).click();
 
        scrollendpage();
-
 
         try {
             wait.until(ExpectedConditions.elementToBeClickable(musteriler.vknTckn)).click();
