@@ -75,7 +75,6 @@ public class MusteriStepDef  extends ReusableMethods {
        wait.until(ExpectedConditions.elementToBeClickable(musteriler.vergiDairesi)).click();
 
        musteriler.vergiDairesi.sendKeys("MALATYA");
-
     }
 
     @Then("Musteri kaydet butonuna tıklar")
