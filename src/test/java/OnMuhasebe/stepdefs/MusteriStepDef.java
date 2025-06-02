@@ -82,5 +82,4 @@ public class MusteriStepDef  extends ReusableMethods {
         musteriler.kaydetButton.click();
     }
 
-
 }
