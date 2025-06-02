@@ -36,7 +36,7 @@ public class MusterilerSayfasi {
     @AndroidFindBy(xpath = "(//android.widget.Button[@content-desc=\"Seçiniz\"])[1]")
     public WebElement musteriKategorisi;
 
-    @AndroidFindBy(xpath = "//android.widget.Button[@content-desc=\"Kamu\"]")
+    @AndroidFindBy(xpath = "(//android.widget.Button)[2]")
     public WebElement kategoriSec;
 
     @AndroidFindBy(xpath = "//android.view.View[@content-desc=\"Fatura Bilgileri\n" +
@@ -65,10 +65,10 @@ public class MusterilerSayfasi {
     public WebElement ilceSecim;
 
     @AndroidFindBy(xpath = "//android.widget.ScrollView/android.widget.EditText[4]")
-    public WebElement vknTckn;
+    public WebElement vknTckn2;
 
     @AndroidFindBy(xpath = "//android.widget.ScrollView/android.widget.EditText[1]")
-    public WebElement vknTckn2;
+    public WebElement vknTckn;
 
     @AndroidFindBy(xpath = "//android.widget.ScrollView/android.widget.EditText[3]")
     public WebElement vergiDairesi;

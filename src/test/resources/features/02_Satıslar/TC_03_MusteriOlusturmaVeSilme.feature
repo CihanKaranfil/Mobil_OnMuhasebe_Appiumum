@@ -1,4 +1,4 @@
-
+@123
 Feature: Musteri Olusturma ve silme
   Scenario: Musteri Olusturur ve siler
     Given Kullanici uygulamayı acar
@@ -11,3 +11,5 @@ Feature: Musteri Olusturma ve silme
     And Musteri firma bilgileri girilir
     Then  Musteri Fatura bilgileri girilir
     Then Musteri kaydet butonuna tıklar
+
+    #müteri kategori seçiminde kalıyor

@@ -80,6 +80,7 @@ public class MusteriStepDef  extends ReusableMethods {
 
     @Then("Musteri kaydet butonuna tıklar")
     public void musteriKaydetButonunaTıklar() {
+        musteriler.kaydetButton.click();
     }
 
 
