@@ -1,4 +1,4 @@
-@sirket
+@ortagtag
 Feature: Kasa Olusturma ve silme
   Scenario: Kasa Olusturur ve siler
     Given Kullanici uygulamayı acar

@@ -72,9 +72,9 @@ public class MusteriStepDef  extends ReusableMethods {
         }
         musteriler.vknTckn.sendKeys(faker.number().digits(11));
        Driver.getDriver().hideKeyboard();
-       wait.until(ExpectedConditions.elementToBeClickable(musteriler.vergiDairesi)).click();
-
-       musteriler.vergiDairesi.sendKeys("MALATYA");
+      // wait.until(ExpectedConditions.elementToBeClickable(musteriler.vergiDairesi)).click();
+//
+      // musteriler.vergiDairesi.sendKeys("MALATYA");
     }
 
     @Then("Musteri kaydet butonuna tıklar")

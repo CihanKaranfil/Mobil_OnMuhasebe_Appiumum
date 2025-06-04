@@ -33,7 +33,7 @@ public class KasaStepdefs extends ReusableMethods {
     public void kasaOlusturButonunaTiklar() throws InterruptedException {
         try {
             List<WebElement> buttons = Driver.getDriver().findElements(AppiumBy.className("android.widget.Button"));
-            buttons.get(1).click();
+            buttons.get(0).click();
         } catch (Exception e) {
             List<WebElement> buttons = Driver.getDriver().findElements(AppiumBy.className("android.widget.Button"));
             buttons.get(1).click();

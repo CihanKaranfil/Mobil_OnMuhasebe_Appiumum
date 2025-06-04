@@ -1,4 +1,4 @@
-
+@ortagtag
 Feature: Urun Olusturma ve silme
   Scenario: Urun Olusturur ve siler
     Given Kullanici uygulamayı acar

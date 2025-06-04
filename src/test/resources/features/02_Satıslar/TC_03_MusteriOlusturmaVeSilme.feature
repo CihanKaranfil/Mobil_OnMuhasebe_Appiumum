@@ -1,4 +1,4 @@
-@123
+@ortagtag
 Feature: Musteri Olusturma ve silme
   Scenario: Musteri Olusturur ve siler
     Given Kullanici uygulamayı acar

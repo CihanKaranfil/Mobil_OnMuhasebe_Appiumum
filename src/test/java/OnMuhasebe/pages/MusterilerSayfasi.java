@@ -67,7 +67,7 @@ public class MusterilerSayfasi {
     @AndroidFindBy(xpath = "//android.widget.ScrollView/android.widget.EditText[4]")
     public WebElement vknTckn2;
 
-    @AndroidFindBy(xpath = "//android.widget.ScrollView/android.widget.EditText[1]")
+    @AndroidFindBy(xpath = "//android.widget.ScrollView/android.widget.EditText[2]")
     public WebElement vknTckn;
 
     @AndroidFindBy(xpath = "//android.widget.ScrollView/android.widget.EditText[3]")

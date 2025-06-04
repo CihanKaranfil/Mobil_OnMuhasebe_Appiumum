@@ -1,4 +1,4 @@
-@1
+@ortagtag
   Feature: eArsive Giris yapabilmeli
     Scenario: eArsive Giris yapar
       Given Kullanici eposta ve sifre girer
