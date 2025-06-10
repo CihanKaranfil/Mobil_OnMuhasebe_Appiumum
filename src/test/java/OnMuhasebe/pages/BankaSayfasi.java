@@ -17,8 +17,4 @@ public class BankaSayfasi {
     @AndroidFindBy(xpath = "//android.widget.Button[@content-desc=\"Yeni Banka\"]")
     public WebElement yeniBankaButonu;
 
-
-
-
-
 }

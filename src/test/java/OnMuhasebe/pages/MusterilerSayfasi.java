@@ -76,6 +76,4 @@ public class MusterilerSayfasi {
     @AndroidFindBy(xpath = "//android.widget.Button[@content-desc=\"Kaydet\"]")
     public WebElement kaydetButton;
 
-
-
 }

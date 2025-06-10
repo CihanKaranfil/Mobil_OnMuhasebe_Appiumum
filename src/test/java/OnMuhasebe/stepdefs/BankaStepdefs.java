@@ -25,7 +25,6 @@ public class BankaStepdefs {
 
             bankasayfasi.yeniBankaButonu.click();
             Thread.sleep(5000);
-
         }
     }
 

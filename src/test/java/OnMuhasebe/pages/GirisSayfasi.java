@@ -15,5 +15,4 @@ public class GirisSayfasi {
     @AndroidFindBy(xpath = "//android.widget.Button[@content-desc=\"Giriş Yap\"]")
     public WebElement girisYapButonu;
 
-
 }

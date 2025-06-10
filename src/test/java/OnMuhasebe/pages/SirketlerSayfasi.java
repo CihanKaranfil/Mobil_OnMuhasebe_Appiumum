@@ -12,9 +12,6 @@ public class SirketlerSayfasi {
         PageFactory.initElements(new AppiumFieldDecorator(Driver.getDriver()), this);
     }
 
-    @AndroidFindBy(id = "com.androidsample.generalstore:id/spinnerCountry")
-    public WebElement ulkeMenusu;
-
     @AndroidFindBy(xpath = "//android.view.View[@content-desc=\"Ayarlar\"]")
     public WebElement ayarlarMenu;
 
@@ -36,8 +33,5 @@ public class SirketlerSayfasi {
     @AndroidFindBy(xpath = "//android.view.View[@content-desc=\"Vergi ve İletişim Bilgileri\n" +
             "Sekme 2 / 2\"]")
     public WebElement vergiİletisimMenu;
-
-
-
 
 }

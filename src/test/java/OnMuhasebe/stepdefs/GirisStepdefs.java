@@ -10,7 +10,6 @@ public class GirisStepdefs {
     @Given("Kullanici eposta ve sifre girer")
     public void kullaniciEpostaVeSifreGirer() {
 
-
     }
 
     @Then("Giris butonuna tıklar")

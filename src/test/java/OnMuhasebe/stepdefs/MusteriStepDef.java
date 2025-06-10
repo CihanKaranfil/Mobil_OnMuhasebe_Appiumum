@@ -12,7 +12,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-import java.util.Arrays;
 
 public class MusteriStepDef  extends ReusableMethods {
     MusterilerSayfasi musteriler = new MusterilerSayfasi();
@@ -72,9 +71,6 @@ public class MusteriStepDef  extends ReusableMethods {
         }
         musteriler.vknTckn.sendKeys(faker.number().digits(11));
        Driver.getDriver().hideKeyboard();
-      // wait.until(ExpectedConditions.elementToBeClickable(musteriler.vergiDairesi)).click();
-//
-      // musteriler.vergiDairesi.sendKeys("MALATYA");
     }
 
     @Then("Musteri kaydet butonuna tıklar")
