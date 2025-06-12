@@ -18,12 +18,10 @@ public class BankaStepdefs {
             List<WebElement> buttons = Driver.getDriver().findElements(AppiumBy.className("android.widget.Button"));
             buttons.get(0).click();
         } catch (Exception e) {
-            List<WebElement> buttons = Driver.getDriver().findElements(AppiumBy.className("android.widget.Button"));
-            buttons.get(1).click();
 
             Thread.sleep(1000);
 
-            bankasayfasi.yeniBankaButonu.click();
+            bankasayfasi.yeniBankaButonu2.click();
             Thread.sleep(5000);
         }
     }

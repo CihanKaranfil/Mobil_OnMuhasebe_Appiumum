@@ -1,6 +1,5 @@
 package OnMuhasebe.pages;
 
-
 import OnMuhasebe.utilities.Driver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;

@@ -48,7 +48,6 @@ public class KasaStepdefs extends ReusableMethods {
         kasa.kasaIsmi.sendKeys("YENİ TEST KASASI MOBİL");
         wait.until(ExpectedConditions.elementToBeClickable(kasa.acilisBakiyesi)).click();
         kasa.acilisBakiyesi.sendKeys("1000");
-
         Driver.getDriver().hideKeyboard();
     }
 

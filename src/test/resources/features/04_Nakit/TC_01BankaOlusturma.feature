@@ -1,4 +1,4 @@
-@ortagtag1
+@ortagtag
 Feature: Banka Olusturma ve silme
   Scenario: Banka Olusturur ve siler
     Given Kullanici uygulamayı acar

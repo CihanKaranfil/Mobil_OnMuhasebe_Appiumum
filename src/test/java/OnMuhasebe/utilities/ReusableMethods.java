@@ -9,7 +9,6 @@ import org.openqa.selenium.interactions.Sequence;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Arrays;
@@ -159,11 +158,11 @@ public class ReusableMethods {
         PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH, "finger1");
         Sequence swipe = new Sequence(finger, 0);
 
-        // Başlangıç noktasına bas
+        // Başlangıç noktasına
         swipe.addAction(finger.createPointerMove(Duration.ofMillis(0), PointerInput.Origin.viewport(), 500, 1300));
         swipe.addAction(finger.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
 
-        // Parmağı (500, 600) → (500, 1300) arasında kaydır
+        // Parmağı (500, 600) → (500, 1300) arasında kaydı
         swipe.addAction(finger.createPointerMove(Duration.ofMillis(600), PointerInput.Origin.viewport(), 500, 600));
 
         // Parmağı kaldır

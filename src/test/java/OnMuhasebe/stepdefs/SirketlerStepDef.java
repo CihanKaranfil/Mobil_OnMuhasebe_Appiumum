@@ -15,7 +15,6 @@ public class SirketlerStepDef {
     WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
     Faker faker = new Faker();
 
-
     @Then("Ayarlar menusune tiklar")
     public void ayarlarMenusuneTiklar() {
         wait.until(ExpectedConditions.elementToBeClickable(sirketler.ayarlarMenu)).click();
